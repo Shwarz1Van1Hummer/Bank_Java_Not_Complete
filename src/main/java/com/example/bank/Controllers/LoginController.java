@@ -33,7 +33,7 @@ public class LoginController implements Initializable {
         Stage stage = (Stage) error_lbl.getScene().getWindow();
         Model.getInstance().getViewFactory().closeStage(stage);
         if(Model.getInstance().getViewFactory().getLoginAccountType() == AccountType.CLIENT){
-            Model.getInstance().getViewFactory().showLoginWindow();
+            Model.getInstance().getViewFactory().showClientWindow();
         } else {
             Model.getInstance().getViewFactory().showAdminWindow();
         }
